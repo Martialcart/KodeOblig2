@@ -21,14 +21,23 @@ header {
 #navHeader {
     margin: 0px;
 }
+
 nav {
     display: flex;
     flex-flow: column;
 }
+
 ul {
     display: flex;
     list-style-type: none;
     gap: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 5px;
 }
 
 @media (max-width: 426px) {
