@@ -1,8 +1,40 @@
 /* HEADER */
 header {
-
+    display: flex;
+    flex-flow: column; 
 }
 
+.headline {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: content;
+}
+
+#headCV {
+    font-size: 3em;
+}
+
+#userName {
+    margin-top: 2em;
+}
+
+#navHeader {
+    margin: 0px;
+}
+nav {
+    display: flex;
+    flex-flow: column;
+}
 ul {
+    display: flex;
     list-style-type: none;
+    gap: 20px;
+}
+
+@media (max-width: 426px) {
+    header {
+	flex-flow: column;
+	align-items: center;
+    }
+
 }
