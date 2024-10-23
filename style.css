@@ -6,8 +6,8 @@ header {
 
 .headline {
     display: flex;
-    justify-content: space-around;
-    flex-basis: content;
+    justify-content: flex-start;
+    gap: 50%;
 }
 
 #headCV {
@@ -36,14 +36,23 @@ ul {
 
 a {
     text-decoration: none;
-    background-color: blue;
-    border-radius: 5px;
+    background-color: #eeeeff;
+    border-radius: 10px;
 }
 
 @media (max-width: 426px) {
-    header {
-	flex-flow: column;
-	align-items: center;
+    .headline {
+	flex-flow: column;		
     }
 
+    #userName {
+    	margin-top: 0px;
+    }
+
+    ul {
+	flex-flow: column;
+	margin: 0px;
+	gap: 0px;
+	padding-inline-start: 0px;
+    }
 }
