@@ -27,6 +27,13 @@ nav {
     flex-flow: column;
 }
 
+/*MAIN*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 ul {
     display: flex;
     list-style-type: none;
@@ -38,6 +45,9 @@ a {
     text-decoration: none;
     background-color: #eeeeff;
     border-radius: 10px;
+}
+.icon {
+    height: 20px;
 }
 
 @media (max-width: 426px) {
