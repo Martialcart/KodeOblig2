@@ -1,7 +1,27 @@
+:root { 
+/* VARIABLES */
+
+    /* COLOR */
+    --color1: #69dafe;
+    --color2: #69faad;
+    --color3: #69dada;
+    --color4: #69babe;
+    --color5: #69beef;
+
+    /* RADIUS*/
+    --radius: 20px;
+}
+
+body {
+    background-color: var(--color1);
+}
+
 /* HEADER */
 header {
     display: flex;
     flex-flow: column; 
+    background-color: var(--color2);
+    border-radius: var(--radius);
 }
 
 .headline {
@@ -41,18 +61,28 @@ ul {
     gap: 20px;
 }
 
+li {
+    background-color: var(--color4);
+    border-radius: var(--radius);
+}   
 
 a {
     text-decoration: none;
-    background-color: #eeeeff;
-    border-radius: 10px;
+    background-color: var(--color5);
+    border-radius: var(--radius);
 }
 .icon {
     height: 20px;
 }
 
+figure {
+    display: flex;
+    background-color: var(--color3);
+    border-radius: var(--radius);
+}
+
 .thumb {
-    height: 20px;
+    height: 80px;
 }
 
 @media (max-width: 426px) {
