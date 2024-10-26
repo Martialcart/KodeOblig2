@@ -57,13 +57,14 @@ main {
 
 ul {
     display: flex;
+    justify-content: space-around;
     list-style-type: none;
     gap: 20px;
+    background-color: var(--color4);
+    border-radius: var(--radius);
 }
 
 li {
-    background-color: var(--color4);
-    border-radius: var(--radius);
 }   
 
 a {
@@ -77,6 +78,7 @@ a {
 
 figure {
     display: flex;
+    flex-flow: column;
     background-color: var(--color3);
     border-radius: var(--radius);
 }
