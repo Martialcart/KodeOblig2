@@ -2,14 +2,14 @@
 /* VARIABLES */
 
     /* COLOR */
-    --color1: #69dafe;
-    --color2: #69faad;
-    --color3: #69dada;
+    --color1: #d2fafe;
+    --color2: #afdade;
+    --color3: #8ccace;
     --color4: #69babe;
-    --color5: #69beef;
+    --color5: #46baae;
 
     /* RADIUS*/
-    --radius: 20px;
+    --radius: 2em;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 header {
     display: flex;
     flex-flow: column; 
-    background-color: var(--color2);
+    background-image: linear-gradient(var(--color5), var(--color2));
     border-radius: var(--radius);
 }
 
@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: flex-start;
     gap: 50%;
+    height: fit-content;
 }
 
 #headCV {
@@ -51,21 +52,30 @@ nav {
 /*MAIN*/
 main {
     display: flex;
+    flex-flow: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1em;
+}
+
+article {
+    background-color: var(--color2);
+    border-radius: var(--radius);
 }
 
 ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    padding-inline-start: 0px;
     gap: 20px;
-    background-color: var(--color4);
+    background-color: var(--color3);
     border-radius: var(--radius);
 }
 
-li {
-}   
+
+.imgHug {
+    width: fit-content;    
+}
 
 a {
     text-decoration: none;
@@ -79,12 +89,14 @@ a {
 figure {
     display: flex;
     flex-flow: column;
-    background-color: var(--color3);
+    justify-content: space-around;
+    background-color: var(--color2);
     border-radius: var(--radius);
 }
 
 .thumb {
     height: 80px;
+    border-radius: var(--radius);
 }
 
 @media (max-width: 426px) {
@@ -100,10 +112,5 @@ figure {
 	flex-flow: column;
 	margin: 20px;
 	gap: 0px;
-	padding-inline-start: 0px;
     }
-}
-
-@media (min-width: 800px) {
-
 }
